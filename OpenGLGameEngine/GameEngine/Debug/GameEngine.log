@@ -1,0 +1,11 @@
+﻿  InitGLEW.cpp
+  InitGLUT.cpp
+  Engine.cpp
+  ModelsManager.cpp
+  SceneManager.cpp
+  ShaderManager.cpp
+  Model.cpp
+  Quad.cpp
+  Triangle.cpp
+  Generating Code...
+  GameEngine.vcxproj -> C:\Users\User\Documents\GitHub\OpenGLGameEngine\OpenGLGameEngine\Debug\GameEngine.lib
