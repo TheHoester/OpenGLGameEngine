@@ -6,10 +6,6 @@ SceneManager::SceneManager()
 {
 	glEnable(GL_DEPTH_TEST);
 
-	shaderManager = new ShaderManager();
-	shaderManager->CreateProgram("colourShader",
-								 "Shaders\\VertexShader.glsl",
-								 "Shaders\\FragmentShader.glsl");
 	viewMatrix = glm::mat4(1.0f, 0.0f, 0.0f, 0.0f,
 		0.0f, 1.0f, 0.0f, 0.0f,
 		0.0f, 0.0f, -1.0f, 0.0f,
@@ -18,11 +14,7 @@ SceneManager::SceneManager()
 	modelsManager = new ModelsManager();
 }
 
-SceneManager::~SceneManager()
-{
-	delete shaderManager;
-	delete modelsManager;
-}
+SceneManager::~SceneManager() { }
 
 void SceneManager::SetModelsManager(ModelsManager*& modelsManager) { this->modelsManager = modelsManager; }
 

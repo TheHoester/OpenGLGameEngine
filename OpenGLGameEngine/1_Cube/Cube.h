@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../GameEngine/Rendering/Models/Model.h"
+#include <GameEngine\Rendering\Models\Model.h>
 #include <time.h>
 #include <stdarg.h>
 

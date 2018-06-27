@@ -131,6 +131,7 @@
     <ClCompile Include="Rendering\Models\Model.cpp" />
     <ClCompile Include="Rendering\Models\Quad.cpp" />
     <ClCompile Include="Rendering\Models\Triangle.cpp" />
+    <ClCompile Include="Rendering\Texture\TextureLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -151,6 +152,8 @@
     <ClInclude Include="Rendering\Models\Model.h" />
     <ClInclude Include="Rendering\Models\Quad.h" />
     <ClInclude Include="Rendering\Models\Triangle.h" />
+    <ClInclude Include="Rendering\Texture\BMPHeaders.h" />
+    <ClInclude Include="Rendering\Texture\TextureLoader.h" />
     <ClInclude Include="Rendering\VertexFormat.h" />
     <ClInclude Include="Managers\SceneManager.h" />
     <ClInclude Include="Managers\ShaderManager.h" />

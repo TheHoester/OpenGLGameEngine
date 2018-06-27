@@ -13,11 +13,14 @@ Engine::~Engine()
 		delete mShaderManager;
 	if (mModelsManager)
 		delete mModelsManager;
+	if (mTextureLoader)
+		delete mTextureLoader;
 }
 
 Managers::SceneManager* Engine::GetSceneManager() const { return mSceneManager; }
 Managers::ShaderManager* Engine::GetShaderManager() const { return mShaderManager; }
 Managers::ModelsManager* Engine::GetModelsManager() const { return mModelsManager; }
+TextureLoader* Engine::GetTextureLoader() const { return mTextureLoader; }
 
 bool Engine::Init() 
 { 
@@ -31,6 +34,7 @@ bool Engine::Init()
 
 	mShaderManager = new Managers::ShaderManager();
 	mShaderManager->CreateProgram("colourShader", "..\\GameEngine\\Shaders\\VertexShader.glsl", "..\\GameEngine\\Shaders\\FragmentShader.glsl");
+	mTextureLoader = new TextureLoader();
 
 	if (mSceneManager && mShaderManager)
 	{

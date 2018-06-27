@@ -1,26 +1,33 @@
 #pragma once
 
-#include "Core/Init/InitGLUT.h"
-#include "Managers/SceneManager.h"
+#include "Core\Init\InitGLUT.h"
+#include "Managers\SceneManager.h"
+#include "Rendering\Texture\TextureLoader.h"
 
 namespace GameEngine
 {
 	class Engine
 	{
 	private:
-		Managers::SceneManager* mSceneManager;
+		Managers::SceneManager*  mSceneManager;
 		Managers::ShaderManager* mShaderManager;
 		Managers::ModelsManager* mModelsManager;
+		TextureLoader* mTextureLoader;
 
 	public:
-		Engine(void);
-		~Engine(void);
+		Engine();
+		~Engine();
 
-		bool Init(void);
-		void Run(void);
+		// OpenGL and manager init
+		bool Init();
 
-		Managers::SceneManager* GetSceneManager(void) const;
-		Managers::ShaderManager* GetShaderManager(void) const;
-		Managers::ModelsManager* GetModelsManager(void) const;
+		// Loop
+		void Run();
+
+		// Getters
+		Managers::SceneManager*  GetSceneManager()  const;
+		Managers::ShaderManager* GetShaderManager() const;
+		Managers::ModelsManager* GetModelsManager() const;
+		TextureLoader* GetTextureLoader() const;
 	};
 }

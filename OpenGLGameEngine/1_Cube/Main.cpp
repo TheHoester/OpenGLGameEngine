@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../GameEngine/Engine.h"
+#include <GameEngine\Engine.h>
 #include "Cube.h"
 
 using namespace GameEngine;

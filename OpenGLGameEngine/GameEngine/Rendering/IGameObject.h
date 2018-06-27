@@ -23,6 +23,9 @@ namespace GameEngine
 
 			virtual GLuint GetVao(void) const = 0;
 			virtual const std::vector<GLuint>& GetVbos(void) const = 0;
+
+			virtual void SetTexture(std::string textureName, GLuint texture) = 0;
+			virtual const GLuint GetTexture(std::string textureName) const = 0;
 		};
 
 		inline IGameObject::~IGameObject(void) { }

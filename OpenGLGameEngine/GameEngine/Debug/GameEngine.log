@@ -7,5 +7,6 @@
   Model.cpp
   Quad.cpp
   Triangle.cpp
+  TextureLoader.cpp
   Generating Code...
-  GameEngine.vcxproj -> C:\Users\User\Documents\GitHub\OpenGLGameEngine\OpenGLGameEngine\Debug\GameEngine.lib
+  GameEngine.vcxproj -> C:\Users\User\Documents\Projects\OpenGLGameEngine\Debug\GameEngine.lib

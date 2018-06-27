@@ -1,7 +1,6 @@
 #pragma once
 
 #include "ModelsManager.h"
-#include "ShaderManager.h"
 #include "../Core/Init/IListener.h"
 
 namespace GameEngine
@@ -12,7 +11,6 @@ namespace GameEngine
 		{
 		private:
 			ModelsManager* modelsManager;
-			ShaderManager* shaderManager;
 
 			glm::mat4 projectionMatrix;
 			glm::mat4 viewMatrix;
